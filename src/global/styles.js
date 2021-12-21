@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
  
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
@@ -418,5 +418,3 @@ th {
   font-weight: bold;
 }
 `;
- 
-export default GlobalStyle;
