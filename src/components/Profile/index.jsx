@@ -1,23 +1,29 @@
 import React from "react";
-import * as Styled from "./styled";
+import { Image, InfoUser, StatusCount, Username, Wrapper } from "./styled";
 
 const Profile = () => {
   return (
-    <Styled.Wrapper>
-      <Styled.WrapperImage
-        src="https://avatars.githubusercontent.com/u/28929274?v=4"
+    <Wrapper>
+      <Image
+        src="https://avatars.githubusercontent.com/u/70078964?v=4"
         alt="avatar"
       />
-      <Styled.WrapperInfoUser>
+      <InfoUser>
         <div>
-          <h1>Rocketseat</h1>
-          <Styled.WrapperUsername>
+          <h1>Luana Stephany</h1>
+          <Username>
             <h3>Username: </h3>
-            <span>rocketseat</span>
-          </Styled.WrapperUsername>
+            <a
+              href="https://github.com/luanastephany"
+              target="_blank"
+              rel="noreferrer"
+            >
+              luanastephany
+            </a>
+          </Username>
         </div>
 
-        <Styled.WrapperStatusCount>
+        <StatusCount>
           <div>
             <h4>Followers</h4>
             <span>5</span>
@@ -31,9 +37,9 @@ const Profile = () => {
             <h4>Following</h4>
             <span>5</span>
           </div>
-        </Styled.WrapperStatusCount>
-      </Styled.WrapperInfoUser>
-    </Styled.Wrapper>
+        </StatusCount>
+      </InfoUser>
+    </Wrapper>
   );
 };
 

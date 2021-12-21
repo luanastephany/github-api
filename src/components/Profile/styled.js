@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   align-items: flex-start;
 `
 
-export const WrapperInfoUser = styled.div`
+export const InfoUser = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -14,12 +14,16 @@ export const WrapperInfoUser = styled.div`
   margin-left: 8px;
 `
 
-export const WrapperStatusCount = styled.div`
+export const StatusCount = styled.div`
   display: flex;
   align-items: center;
+  div {
+    margin: 8px;
+    text-align: center;
+  }
 `
 
-export const WrapperUsername = styled.div`
+export const Username = styled.div`
   display: flex;
   align-items: center;
   h3 {
@@ -27,7 +31,7 @@ export const WrapperUsername = styled.div`
   }
 `
 
-export const WrapperImage = styled.img`
+export const Image = styled.img`
   border-radius: 50%;
   overflow: hidden;
   width: 200px;
