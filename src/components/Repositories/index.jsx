@@ -1,4 +1,5 @@
 import React from "react";
+import RepositoryItem from "../RepositoryItem";
 import { StyleTab, StyleTablist, StyleTabPanel, StyleTabs } from "./styled";
 
 const Repositories = () => {
@@ -12,8 +13,21 @@ const Repositories = () => {
         <StyleTab>Starred</StyleTab>
       </StyleTablist>
 
-      <StyleTabPanel>panel repositories</StyleTabPanel>
-      <StyleTabPanel>panel Starred</StyleTabPanel>
+      <StyleTabPanel>
+        <RepositoryItem
+          name="afrianska-landing-page"
+          linkToRepo="https://github.com/luanastephany/afrianska-landing-page"
+          fullname="luanastephany/afrianska-landing-page"
+        />
+      </StyleTabPanel>
+
+      <StyleTabPanel>
+        <RepositoryItem
+          name="anmais-fantasticos"
+          linkToRepo="https://github.com/luanastephany/animais-fantasticos"
+          fullname="luanastephany/animais-fantasticos"
+        />
+      </StyleTabPanel>
     </StyleTabs>
   );
 };
