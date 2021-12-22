@@ -4,9 +4,9 @@ const RepositoryItem = ({ name, linkToRepo, fullname }) => {
   return (
     <div>
       <h2>{name}</h2>
-      <h4>{fullname} </h4>
+      <h4>fullname: </h4>
       <a href={linkToRepo} target="_blank" rel="noreferrer">
-        luanastephany/afrianska
+        {fullname}
       </a>
     </div>
   );

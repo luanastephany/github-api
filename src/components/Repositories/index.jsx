@@ -23,7 +23,7 @@ const Repositories = () => {
 
       <StyleTabPanel>
         <RepositoryItem
-          name="anmais-fantasticos"
+          name="animais-fantasticos"
           linkToRepo="https://github.com/luanastephany/animais-fantasticos"
           fullname="luanastephany/animais-fantasticos"
         />
