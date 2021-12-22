@@ -10,8 +10,20 @@ export const InfoUser = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: auto;
+  height: 200px;
   margin-left: 8px;
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
 `
 
 export const StatusCount = styled.div`
@@ -26,8 +38,13 @@ export const StatusCount = styled.div`
 export const Username = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 8px;
   h3 {
     margin-right: 8px;
+  }
+  a {
+    color: rgb(5, 92, 102);
+    font-size: 18px;
   }
 `
 

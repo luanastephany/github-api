@@ -1,5 +1,6 @@
 import Layout from "./components/Layout";
 import Profile from "./components/Profile";
+import Repositories from "./components/Repositories";
 import { GlobalStyle } from "./global/styles";
 
 function App() {
@@ -8,8 +9,7 @@ function App() {
       <GlobalStyle />
       <Layout>
         <Profile />
-        <div>Repositories</div>
-        <div>Starreds</div>
+        <Repositories />
       </Layout>
     </main>
   );
