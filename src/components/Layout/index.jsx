@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../Header";
 import { WrapperLayout } from "./styled";
 
 const Layout = ({ children }) => {
   return (
     <WrapperLayout>
-      <header>Header</header>
+      <Header />
       {children}
     </WrapperLayout>
   );
