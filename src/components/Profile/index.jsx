@@ -7,10 +7,7 @@ const Profile = () => {
 
   return (
     <Wrapper>
-      <Image
-        src="https://avatars.githubusercontent.com/u/70078964?v=4"
-        alt="avatar"
-      />
+      <Image src={githubState.user.avatar} alt="avatar" />
       <InfoUser>
         <div>
           <h1>{githubState.user.name}</h1>
@@ -23,6 +20,10 @@ const Profile = () => {
             >
               {githubState.user.login}
             </a>
+          </Username>
+          <Username>
+            <h3>Location:</h3>
+            <span>{githubState.user.location}</span>
           </Username>
         </div>
 

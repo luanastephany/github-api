@@ -1,20 +1,29 @@
 import Layout from "./components/Layout";
+import NoSearch from "./components/NoSearch";
 import Profile from "./components/Profile";
 import Repositories from "./components/Repositories";
-import { GlobalStyle } from "./global/styles";
-import GithubProvider from "./providers/githubProvider";
+import useGithub from "./hooks/github-hooks";
 
 function App() {
+  const { githubState } = useGithub();
+
   return (
-    <main>
-      <GithubProvider>
-        <GlobalStyle />
-        <Layout>
-          <Profile />
-          <Repositories />
-        </Layout>
-      </GithubProvider>
-    </main>
+    <Layout>
+      {githubState.hasUser ? (
+        <>
+          {githubState.loading ? (
+            <p>Loading</p>
+          ) : (
+            <>
+              <Profile />
+              <Repositories />
+            </>
+          )}
+        </>
+      ) : (
+        <NoSearch />
+      )}
+    </Layout>
   );
 }
 
