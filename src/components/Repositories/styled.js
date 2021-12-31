@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyleTabs = styled(Tabs)`
   font-size: 16px;
-  width: 100%;
+  width: 1000px;
   margin-top: 16px;
 `;
 
@@ -17,20 +17,19 @@ export const StyleTablist = styled(TabList)`
 StyleTablist.tabsRole = "TabList";
 
 export const StyleTab = styled(Tab)`
-  border-radius: 16px;
-  border: 1px solid #ccc;
+  border: none;
   padding: 8px;
   cursor: pointer;
   user-select: none;
+  color: #fff;
 
   &.is-selected {
-    border: 1px solid #055c66;
+    border-bottom: 1px solid red;
   }
 `;
 StyleTab.tabsRole = "Tab";
 
 export const StyleTabPanel = styled(TabPanel)`
-  padding: 8px;
   display: none;
 
   &.is-selected {

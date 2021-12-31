@@ -6,5 +6,6 @@ export const Wrapper = styled.div`
 
   h1 {
     font-size: 18px;
+    color: #5b5a5f;
   }
 `;
