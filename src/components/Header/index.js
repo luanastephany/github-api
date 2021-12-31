@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 import useGithub from "../../hooks/github-hooks";
 import { Wrapper } from "./styled";
 
@@ -14,6 +15,7 @@ const Header = () => {
   return (
     <Wrapper>
       <header>
+        <FaGithub size={40} color="white" />
         <input
           type="text"
           placeholder="Digite o username"
