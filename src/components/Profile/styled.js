@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
-`
+  background-color: #24232a;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+`;
 
 export const InfoUser = styled.div`
   display: flex;
@@ -15,16 +19,18 @@ export const InfoUser = styled.div`
   h1 {
     font-size: 24px;
     font-weight: bold;
-  }
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
+    color: #cccccf;
   }
   h4 {
     font-size: 16px;
     font-weight: bold;
+    color: #cccccf;
   }
-`
+
+  span {
+    color: #cccccf;
+  }
+`;
 
 export const StatusCount = styled.div`
   display: flex;
@@ -33,7 +39,7 @@ export const StatusCount = styled.div`
     margin: 8px;
     text-align: center;
   }
-`
+`;
 
 export const Username = styled.div`
   display: flex;
@@ -43,14 +49,14 @@ export const Username = styled.div`
     margin-right: 8px;
   }
   a {
-    color: rgb(5, 92, 102);
+    color: #cccccf;
     font-size: 18px;
   }
-`
+`;
 
 export const Image = styled.img`
   border-radius: 50%;
   overflow: hidden;
   width: 200px;
   margin: 8px;
-`
+`;

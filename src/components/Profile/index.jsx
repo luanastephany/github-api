@@ -12,7 +12,6 @@ const Profile = () => {
         <div>
           <h1>{githubState.user.name}</h1>
           <Username>
-            <h3>Username: </h3>
             <a
               href={githubState.user.html_url}
               target="_blank"
@@ -22,7 +21,6 @@ const Profile = () => {
             </a>
           </Username>
           <Username>
-            <h3>Location:</h3>
             <span>{githubState.user.location}</span>
           </Username>
         </div>
