@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
- 
+import { createGlobalStyle } from "styled-components";
+
 export const GlobalStyle = createGlobalStyle`
   /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
@@ -39,6 +39,7 @@ html {
 body {
   margin: 0;  
   font-family: 'Roboto', sans-serif;
+  background-color: #1D1C21;
 }
 
 
