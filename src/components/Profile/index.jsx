@@ -9,7 +9,7 @@ const Profile = () => {
     <Wrapper>
       <Image src={githubState.user.avatar} alt="avatar" />
       <InfoUser>
-        <div>
+        <div className="informations">
           <h1>{githubState.user.name}</h1>
           <Username>
             <a
